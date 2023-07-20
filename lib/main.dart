@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task/Core/helpers/cachehelper.dart';
 
 import 'Core/resourse/routes_manager.dart';
-import 'Features/help/presentation/help.dart';
 
-void main() {
+void main() async {
+  await CacheHelper.init();
   runApp(const MyApp());
 }
 
@@ -18,8 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light(),
       debugShowCheckedModeBanner: false,
       onGenerateRoute: Routes.getRoute,
-      //initialRoute: Routes.splashRoute,
-      home: HelpScreen(),
+      initialRoute: Routes.splashRoute,
     );
   }
 }

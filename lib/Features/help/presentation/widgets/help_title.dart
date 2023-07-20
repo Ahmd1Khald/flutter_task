@@ -11,7 +11,8 @@ class HelpTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(45.0),
+      padding:
+          const EdgeInsets.only(right: 45.0, left: 45, top: 30, bottom: 55),
       child: Text(
         AppStrings.helpString,
         style: getRegularStyle(

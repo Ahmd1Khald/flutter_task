@@ -7,4 +7,5 @@ class AppStrings {
   static const loginString = "Log in";
   static const verifyString = "Verify";
   static const helpString = "Help";
+  static const continueString = "Continue";
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/Core/resourse/strings_manager.dart';
+import 'package:flutter_task/Features/auth/presentation/virefy_phone.dart';
+import 'package:flutter_task/Features/help/presentation/help.dart';
 
 import '../../Features/auth/presentation/register.dart';
 import '../../Features/splash/presentation/splash.dart';
@@ -22,6 +24,14 @@ class Routes {
       case Routes.splashRoute:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
       case Routes.registerRoute:
+        return MaterialPageRoute(builder: (_) => const RegisterScreen());
+      case Routes.verifyPhoneRoute:
+        return MaterialPageRoute(builder: (_) => const VerifyPhone());
+      case Routes.helpRoute:
+        return MaterialPageRoute(builder: (_) => const HelpScreen());
+      case Routes.layoutRoute:
+        return MaterialPageRoute(builder: (_) => const RegisterScreen());
+      case Routes.productDetailsRoute:
         return MaterialPageRoute(builder: (_) => const RegisterScreen());
       default:
         return unDefinedRoute();
