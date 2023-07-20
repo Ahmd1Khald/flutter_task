@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task/Core/resourse/color_manager.dart';
 import 'package:flutter_task/Core/resourse/font_manager.dart';
 import 'package:flutter_task/Core/resourse/strings_manager.dart';
-import 'package:flutter_task/Features/layout/presentation/views/widgets/home_app_bar.dart';
-import 'package:flutter_task/Features/layout/presentation/views/widgets/home_banner.dart';
-import 'package:flutter_task/Features/layout/presentation/views/widgets/home_list_view_builder.dart';
+import 'package:flutter_task/Features/home/presentation/views/widgets/home_app_bar.dart';
+import 'package:flutter_task/Features/home/presentation/views/widgets/home_banner.dart';
+import 'package:flutter_task/Features/home/presentation/views/widgets/home_list_view_builder.dart';
 
 import '../../../../Core/resourse/assets_manager.dart';
 import '../../../../Core/resourse/style_manager.dart';

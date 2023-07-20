@@ -13,7 +13,7 @@ import 'Features/auth/presentation/cotroller/verify_cubit.dart';
 import 'Features/help/data/repository/help_repository.dart';
 import 'Features/help/domain/usecase/get_verify_usecase.dart';
 import 'Features/help/presentation/cotroller/help_cubit.dart';
-import 'Features/layout/presentation/views/product_details_screen.dart';
+import 'Features/home/presentation/views/product_details_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

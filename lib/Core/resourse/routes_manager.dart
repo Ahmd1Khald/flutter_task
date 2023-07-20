@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/Core/resourse/strings_manager.dart';
 import 'package:flutter_task/Features/help/presentation/veiws/help.dart';
-import 'package:flutter_task/Features/layout/presentation/views/home.dart';
+import 'package:flutter_task/Features/home/presentation/views/home.dart';
 
 import '../../Features/auth/presentation/views/register.dart';
 import '../../Features/auth/presentation/views/virefy_phone.dart';
-import '../../Features/layout/presentation/views/product_details_screen.dart';
+import '../../Features/home/presentation/views/product_details_screen.dart';
 import '../../Features/splash/presentation/splash.dart';
 
 class Routes {

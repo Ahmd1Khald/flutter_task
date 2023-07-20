@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_task/Features/layout/presentation/views/widgets/brice_and_cart_button_builder.dart';
-import 'package:flutter_task/Features/layout/presentation/views/widgets/lab_info_builder.dart';
-import 'package:flutter_task/Features/layout/presentation/views/widgets/list_view_builder.dart';
-import 'package:flutter_task/Features/layout/presentation/views/widgets/store_builder.dart';
+import 'package:flutter_task/Features/home/presentation/views/widgets/brice_and_cart_button_builder.dart';
+import 'package:flutter_task/Features/home/presentation/views/widgets/lab_info_builder.dart';
+import 'package:flutter_task/Features/home/presentation/views/widgets/list_view_builder.dart';
+import 'package:flutter_task/Features/home/presentation/views/widgets/store_builder.dart';
 
 import '../../../../Core/constance/app_constance.dart';
 import '../../../../Core/resourse/assets_manager.dart';
