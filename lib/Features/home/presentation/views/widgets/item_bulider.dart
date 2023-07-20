@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task/Features/home/domain/entites/products_entity.dart';
 
 import '../../../../../Core/resourse/color_manager.dart';
+import '../../../../../Core/resourse/font_manager.dart';
 import '../../../../../Core/resourse/routes_manager.dart';
+import '../../../../../Core/resourse/style_manager.dart';
 import '../../../../../Core/resourse/widgets/shadow.dart';
 import 'home_product_data.dart';
 import 'home_product_image.dart';
@@ -9,8 +12,10 @@ import 'home_product_image.dart';
 class ItemBuilder extends StatelessWidget {
   const ItemBuilder({
     super.key,
+    required this.list,
   });
 
+  final ProductsEntity list;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -18,7 +23,7 @@ class ItemBuilder extends StatelessWidget {
         Navigator.pushNamed(context, Routes.productDetailsRoute);
       },
       child: Container(
-          height: MediaQuery.of(context).size.height * 0.3,
+          height: MediaQuery.of(context).size.height * 0.32,
           decoration: BoxDecoration(
             boxShadow: [
               shadow(),
@@ -29,23 +34,26 @@ class ItemBuilder extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const HomeProductImage(
-                image:
+              HomeProductImage(
+                image: list.image ??
                     'https://m.media-amazon.com/images/I/7183SjkrSnL._AC_SL1500_.jpg',
               ),
-              const HomeProductData(
-                company: 'Acer',
-                name: 'Predator Helios 300',
+              HomeProductData(
+                company: list.company ?? 'No company',
+                name: list.name ?? 'No name',
               ),
               const Spacer(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 // crossAxisAlignment: CrossAxisAlignment.c,
                 children: [
-                  const Text(
-                    '32,000 EGP',
-                    style:
-                        TextStyle(color: ColorManager.darkGray, fontSize: 12),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 8.0),
+                    child: Text(
+                      list.price ?? 'No price',
+                      style: getRegularStyle(
+                          color: ColorManager.darkGray, fontSize: FontSize.s12),
+                    ),
                   ),
                   Container(
                     height: 40,

@@ -41,6 +41,7 @@ class _HomeProductImageState extends State<HomeProductImage> {
               },
               icon: Icon(
                 Icons.favorite,
+                size: 28,
                 color: isRed == false ? Colors.grey : Colors.red,
               )),
         )

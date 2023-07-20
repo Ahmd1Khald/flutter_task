@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_task/Core/resourse/color_manager.dart';
 import 'package:flutter_task/Core/resourse/font_manager.dart';
-import 'package:flutter_task/Core/resourse/strings_manager.dart';
 import 'package:flutter_task/Features/home/presentation/views/widgets/home_app_bar.dart';
 import 'package:flutter_task/Features/home/presentation/views/widgets/home_banner.dart';
 import 'package:flutter_task/Features/home/presentation/views/widgets/home_list_view_builder.dart';
 
 import '../../../../Core/functions/loading_page.dart';
 import '../../../../Core/functions/toast.dart';
-import '../../../../Core/resourse/assets_manager.dart';
+import '../../../../Core/resourse/strings_manager.dart';
 import '../../../../Core/resourse/style_manager.dart';
 import '../../../../Core/resourse/widgets/background_color.dart';
 import '../cotroller/products_cubit.dart';
@@ -49,14 +48,6 @@ class HomeScreen extends StatelessWidget {
                     const HomeAppBar(),
                     const HomeBanner(),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 29.0),
-                      child: Image.asset(
-                        ImageAssets.ad1,
-                        height: MediaQuery.of(context).size.height * 0.25,
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                    Padding(
                       padding:
                           const EdgeInsets.only(left: 35.0, right: 17, top: 10),
                       child: Row(
@@ -77,14 +68,18 @@ class HomeScreen extends StatelessWidget {
                               const SizedBox(
                                 height: 24,
                               ),
-                              const HomeListViewBuilder()
+                              HomeListViewBuilder(
+                                list: cubit.productsData,
+                              )
                             ],
                           )),
                           const SizedBox(
                             width: 20,
                           ),
-                          const Expanded(
-                            child: HomeListViewBuilder(),
+                          Expanded(
+                            child: HomeListViewBuilder(
+                              list: cubit.productsData,
+                            ),
                           ),
                         ],
                       ),
