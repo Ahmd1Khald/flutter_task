@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task/Features/home/domain/entites/products_entity.dart';
 import 'package:flutter_task/Features/home/presentation/views/widgets/brice_and_cart_button_builder.dart';
 import 'package:flutter_task/Features/home/presentation/views/widgets/lab_info_builder.dart';
 import 'package:flutter_task/Features/home/presentation/views/widgets/list_view_builder.dart';
@@ -10,8 +11,9 @@ import '../../../../Core/resourse/color_manager.dart';
 import '../../../../Core/resourse/widgets/background_color.dart';
 
 class ProductDetailsScreen extends StatefulWidget {
-  const ProductDetailsScreen({Key? key}) : super(key: key);
+  const ProductDetailsScreen({Key? key, required this.items}) : super(key: key);
 
+  final ProductsEntity items;
   @override
   State<ProductDetailsScreen> createState() => _ProductDetailsScreenState();
 }
@@ -45,11 +47,10 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                const LabInfoBuilder(
-                  name: "Predator Helios 300",
-                  type: "Gaming Laptop",
-                  image:
-                      "https://m.media-amazon.com/images/I/7183SjkrSnL._AC_SL1500_.jpg",
+                LabInfoBuilder(
+                  name: widget.items.name,
+                  type: widget.items.type,
+                  image: widget.items.image,
                 ),
                 const SizedBox(
                   height: 16,

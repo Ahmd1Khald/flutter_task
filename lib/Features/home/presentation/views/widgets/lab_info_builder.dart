@@ -46,7 +46,7 @@ class LabInfoBuilder extends StatelessWidget {
             height: 16,
           ),
           SizedBox(
-            height: 50,
+            height: 65,
             child: Text(
               name, //name
               maxLines: 2,

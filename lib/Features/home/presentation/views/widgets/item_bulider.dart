@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/Features/home/domain/entites/products_entity.dart';
+import 'package:flutter_task/Features/home/presentation/views/product_details_screen.dart';
 
 import '../../../../../Core/resourse/color_manager.dart';
 import '../../../../../Core/resourse/font_manager.dart';
-import '../../../../../Core/resourse/routes_manager.dart';
 import '../../../../../Core/resourse/style_manager.dart';
 import '../../../../../Core/resourse/widgets/shadow.dart';
 import 'home_product_data.dart';
@@ -16,11 +16,18 @@ class ItemBuilder extends StatelessWidget {
   });
 
   final ProductsEntity list;
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, Routes.productDetailsRoute);
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ProductDetailsScreen(
+                items: list,
+              ),
+            ));
       },
       child: Container(
           height: MediaQuery.of(context).size.height * 0.32,

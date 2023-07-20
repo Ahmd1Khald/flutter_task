@@ -5,7 +5,6 @@ import 'package:flutter_task/Features/home/presentation/views/home.dart';
 
 import '../../Features/auth/presentation/views/register.dart';
 import '../../Features/auth/presentation/views/virefy_phone.dart';
-import '../../Features/home/presentation/views/product_details_screen.dart';
 import '../../Features/splash/presentation/splash.dart';
 
 class Routes {
@@ -33,8 +32,6 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const HelpScreen());
       case Routes.homeRoute:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
-      case Routes.productDetailsRoute:
-        return MaterialPageRoute(builder: (_) => const ProductDetailsScreen());
       default:
         return unDefinedRoute();
     }

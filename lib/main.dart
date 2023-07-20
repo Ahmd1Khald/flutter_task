@@ -16,7 +16,6 @@ import 'Features/help/presentation/cotroller/help_cubit.dart';
 import 'Features/home/data/repository/help_repository.dart';
 import 'Features/home/domain/usecase/get_products_usecase.dart';
 import 'Features/home/presentation/cotroller/products_cubit.dart';
-import 'Features/home/presentation/views/home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -60,8 +59,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData.light(),
         debugShowCheckedModeBanner: false,
         onGenerateRoute: Routes.getRoute,
-        //initialRoute: Routes.splashRoute,
-        home: const HomeScreen(),
+        initialRoute: Routes.splashRoute,
       ),
     );
   }
