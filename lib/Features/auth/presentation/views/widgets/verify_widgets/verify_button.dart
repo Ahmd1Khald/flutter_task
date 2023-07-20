@@ -35,7 +35,7 @@ class VerifyButton extends StatelessWidget {
       child: MaterialButton(
           onPressed: onPressed,
           child: Text(
-            AppStrings.helpString,
+            AppStrings.verifyString,
             style: getMediumStyle(
               color: ColorManager.primaryColor,
               fontSize: FontSize.s20,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_task/Core/constance/app_keys.dart';
 import 'package:flutter_task/Core/functions/toast.dart';
+import 'package:flutter_task/Core/helpers/cachehelper.dart';
 import 'package:flutter_task/Core/resourse/widgets/shadow.dart';
 import 'package:flutter_task/Features/auth/presentation/views/widgets/phone_textfield.dart';
 import 'package:flutter_task/Features/auth/presentation/views/widgets/register_title.dart';
@@ -85,6 +87,12 @@ class MainContainer extends StatelessWidget {
                       onPressed: () {
                         if (formKey.currentState!.validate()) {
                           print(nameController.text);
+                          CacheHelper.saveData(
+                              key: AppKeys.userName,
+                              value: nameController.text);
+                          CacheHelper.saveData(
+                              key: AppKeys.userPhone,
+                              value: phoneController.text);
                           print(phoneController.text);
                           cubit.fetchItemsList(data: [
                             nameController.text,

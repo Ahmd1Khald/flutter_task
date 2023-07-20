@@ -3,13 +3,14 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 void myToast({required var state, required ToastState toastState}) =>
     Fluttertoast.showToast(
-        msg: '$state',
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.BOTTOM,
-        timeInSecForIosWeb: 10,
-        backgroundColor: toastColor(toastState),
-        textColor: Colors.white,
-        fontSize: 16.0);
+      msg: '$state',
+      toastLength: Toast.LENGTH_SHORT,
+      gravity: ToastGravity.BOTTOM,
+      timeInSecForIosWeb: 20,
+      backgroundColor: toastColor(toastState),
+      textColor: Colors.white,
+      fontSize: 16.0,
+    );
 
 enum ToastState { success, warning, error }
 
