@@ -15,9 +15,9 @@ class OtpEntity extends Equatable {
 }
 
 class AccountEntity extends Equatable {
-  final int id;
-  final String name;
-  final String phone;
+  final int? id;
+  final String? name;
+  final String? phone;
 
   const AccountEntity({
     required this.id,
