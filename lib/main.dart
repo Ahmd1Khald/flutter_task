@@ -11,9 +11,12 @@ import 'Features/auth/domain/usecase/check_otp_usecase.dart';
 import 'Features/auth/domain/usecase/get_verify_usecase.dart';
 import 'Features/auth/presentation/cotroller/verify_cubit.dart';
 import 'Features/help/data/repository/help_repository.dart';
-import 'Features/help/domain/usecase/get_verify_usecase.dart';
+import 'Features/help/domain/usecase/get_help_usecase.dart';
 import 'Features/help/presentation/cotroller/help_cubit.dart';
-import 'Features/home/presentation/views/product_details_screen.dart';
+import 'Features/home/data/repository/help_repository.dart';
+import 'Features/home/domain/usecase/get_products_usecase.dart';
+import 'Features/home/presentation/cotroller/products_cubit.dart';
+import 'Features/home/presentation/views/home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,16 +35,24 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
+        //auth
         BlocProvider(
           create: (BuildContext context) => VerifyCubit(
             VerifyUseCase(getIt.get<VerifyRepository>()),
             OtpUseCase(getIt.get<VerifyRepository>()),
           ),
         ),
+        //help
         BlocProvider(
           create: (BuildContext context) => HelpCubit(
             HelpUseCase(getIt.get<GetHelpRepository>()),
           )..fetchHelpsList(),
+        ),
+        //home
+        BlocProvider(
+          create: (BuildContext context) => ProductsCubit(
+            ProductsUseCase(getIt.get<GetProductsRepository>()),
+          )..fetchProductsList(),
         ),
       ],
       child: MaterialApp(
@@ -50,7 +61,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         onGenerateRoute: Routes.getRoute,
         //initialRoute: Routes.splashRoute,
-        home: const ProductDetailsScreen(),
+        home: const HomeScreen(),
       ),
     );
   }

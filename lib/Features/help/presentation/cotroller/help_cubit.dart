@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 
 import '../../domain/entites/help_entity.dart';
-import '../../domain/usecase/get_verify_usecase.dart';
+import '../../domain/usecase/get_help_usecase.dart';
 
 part 'help_state.dart';
 

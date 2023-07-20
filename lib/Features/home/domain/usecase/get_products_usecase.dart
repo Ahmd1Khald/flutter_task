@@ -2,8 +2,8 @@ import 'package:dartz/dartz.dart';
 
 import '../../../../Core/errors/failures.dart';
 import '../../../../Core/helpers/use_cases.dart';
-import '../entites/help_entity.dart';
-import '../repository/base_get_help_repository.dart';
+import '../entites/products_entity.dart';
+import '../repository/base_get_products_repository.dart';
 
 class ProductsUseCase extends UseCase<List<ProductsEntity>, NoParam> {
   final BaseGetProductsRepository baseGetProductsRepository;
