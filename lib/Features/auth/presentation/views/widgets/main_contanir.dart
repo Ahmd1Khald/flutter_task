@@ -32,8 +32,7 @@ class MainContainer extends StatelessWidget {
           print(state.verifyData);
           Navigator.pop(context);
           myToast(state: state.verifyData.code, toastState: ToastState.success);
-          Navigator.pushNamed(context, Routes.verifyPhoneRoute,
-              arguments: VerifyCubit.get(context));
+          Navigator.pushNamed(context, Routes.verifyPhoneRoute);
         }
         if (state is VerifyErrorState) {
           //print(state.error);

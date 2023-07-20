@@ -8,4 +8,6 @@ class AppStrings {
   static const verifyString = "Verify";
   static const helpString = "Help";
   static const continueString = "Continue";
+  static const searchString = "Search";
+  static const recommendedString = "Recommended for You";
 }

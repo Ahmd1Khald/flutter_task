@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task/Core/resourse/color_manager.dart';
 import 'package:flutter_task/Core/resourse/font_manager.dart';
 
-import '../../../../Core/resourse/strings_manager.dart';
-import '../../../../Core/resourse/style_manager.dart';
+import '../../../../../Core/resourse/strings_manager.dart';
+import '../../../../../Core/resourse/style_manager.dart';
 
 class HelpButton extends StatelessWidget {
   HelpButton({

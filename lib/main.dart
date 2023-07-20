@@ -10,6 +10,10 @@ import 'Features/auth/data/repository/videos_repository.dart';
 import 'Features/auth/domain/usecase/check_otp_usecase.dart';
 import 'Features/auth/domain/usecase/get_verify_usecase.dart';
 import 'Features/auth/presentation/cotroller/verify_cubit.dart';
+import 'Features/help/data/repository/help_repository.dart';
+import 'Features/help/domain/usecase/get_verify_usecase.dart';
+import 'Features/help/presentation/cotroller/help_cubit.dart';
+import 'Features/layout/presentation/views/product_details_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,13 +38,19 @@ class MyApp extends StatelessWidget {
             OtpUseCase(getIt.get<VerifyRepository>()),
           ),
         ),
+        BlocProvider(
+          create: (BuildContext context) => HelpCubit(
+            HelpUseCase(getIt.get<GetHelpRepository>()),
+          )..fetchHelpsList(),
+        ),
       ],
       child: MaterialApp(
         //color: ColorManager.primaryColor,
         theme: ThemeData.light(),
         debugShowCheckedModeBanner: false,
         onGenerateRoute: Routes.getRoute,
-        initialRoute: Routes.splashRoute,
+        //initialRoute: Routes.splashRoute,
+        home: const ProductDetailsScreen(),
       ),
     );
   }

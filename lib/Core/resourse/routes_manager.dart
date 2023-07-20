@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/Core/resourse/strings_manager.dart';
-import 'package:flutter_task/Features/help/presentation/help.dart';
+import 'package:flutter_task/Features/help/presentation/veiws/help.dart';
+import 'package:flutter_task/Features/layout/presentation/views/home.dart';
 
 import '../../Features/auth/presentation/views/register.dart';
 import '../../Features/auth/presentation/views/virefy_phone.dart';
+import '../../Features/layout/presentation/views/product_details_screen.dart';
 import '../../Features/splash/presentation/splash.dart';
 
 class Routes {
@@ -15,7 +17,7 @@ class Routes {
 
   static const String helpRoute = "/help";
 
-  static const String layoutRoute = "/layout";
+  static const String homeRoute = "/home";
 
   static const String productDetailsRoute = "/productDetails";
 
@@ -29,10 +31,10 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const VerifyPhone());
       case Routes.helpRoute:
         return MaterialPageRoute(builder: (_) => const HelpScreen());
-      case Routes.layoutRoute:
-        return MaterialPageRoute(builder: (_) => const RegisterScreen());
+      case Routes.homeRoute:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       case Routes.productDetailsRoute:
-        return MaterialPageRoute(builder: (_) => const RegisterScreen());
+        return MaterialPageRoute(builder: (_) => const ProductDetailsScreen());
       default:
         return unDefinedRoute();
     }

@@ -4,5 +4,5 @@ import '../../../../Core/errors/failures.dart';
 import '../entites/help_entity.dart';
 
 abstract class BaseGetHelpRepository {
-  Future<Either<Failure, HelpEntity>> fetchHelp();
+  Future<Either<Failure, List<HelpEntity>>> fetchHelp();
 }
