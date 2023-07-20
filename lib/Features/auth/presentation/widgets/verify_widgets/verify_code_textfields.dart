@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_task/Core/resourse/color_manager.dart';
 import 'package:flutter_task/Core/resourse/font_manager.dart';
-import 'package:flutter_task/Features/auth/presentation/widgets/shadow.dart';
+import 'package:flutter_task/Core/resourse/widgets/shadow.dart';
+import 'package:flutter_task/Features/auth/presentation/widgets/verify_widgets/verify_textfield_decoration.dart';
 
 import '../../../../../Core/resourse/style_manager.dart';
 
@@ -48,19 +49,7 @@ class VerifyCodeForm extends StatelessWidget {
                 LengthLimitingTextInputFormatter(1),
                 FilteringTextInputFormatter.digitsOnly,
               ],
-              decoration: InputDecoration(
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide:
-                      BorderSide(color: ColorManager.primaryColor, width: 2),
-                ),
-                enabled: true,
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide:
-                      BorderSide(color: ColorManager.primaryColor, width: 2),
-                ),
-              ),
+              decoration: verifyDecoration(),
               onChanged: (value) {
                 if (value.length == 1) {
                   FocusScope.of(context).nextFocus();
@@ -89,19 +78,7 @@ class VerifyCodeForm extends StatelessWidget {
                 LengthLimitingTextInputFormatter(1),
                 FilteringTextInputFormatter.digitsOnly,
               ],
-              decoration: InputDecoration(
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide:
-                      BorderSide(color: ColorManager.primaryColor, width: 2),
-                ),
-                enabled: true,
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide:
-                      BorderSide(color: ColorManager.primaryColor, width: 2),
-                ),
-              ),
+              decoration: verifyDecoration(),
               onChanged: (value) {
                 if (value.length == 1) {
                   FocusScope.of(context).nextFocus();
@@ -130,19 +107,7 @@ class VerifyCodeForm extends StatelessWidget {
                 LengthLimitingTextInputFormatter(1),
                 FilteringTextInputFormatter.digitsOnly,
               ],
-              decoration: InputDecoration(
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide:
-                      BorderSide(color: ColorManager.primaryColor, width: 2),
-                ),
-                enabled: true,
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide:
-                      BorderSide(color: ColorManager.primaryColor, width: 2),
-                ),
-              ),
+              decoration: verifyDecoration(),
               onChanged: (value) {
                 if (value.length == 1) {
                   FocusScope.of(context).nextFocus();
@@ -171,19 +136,7 @@ class VerifyCodeForm extends StatelessWidget {
                 LengthLimitingTextInputFormatter(1),
                 FilteringTextInputFormatter.digitsOnly,
               ],
-              decoration: InputDecoration(
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide:
-                      BorderSide(color: ColorManager.primaryColor, width: 2),
-                ),
-                enabled: true,
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide:
-                      BorderSide(color: ColorManager.primaryColor, width: 2),
-                ),
-              ),
+              decoration: verifyDecoration(),
               onChanged: (value) {
                 if (value.length == 1) {
                   FocusScope.of(context).nextFocus();

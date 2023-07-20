@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_task/Features/auth/presentation/widgets/shadow.dart';
+import 'package:flutter_task/Core/resourse/widgets/shadow.dart';
 
 import '../../../../Core/resourse/assets_manager.dart';
 import '../../../../Core/resourse/color_manager.dart';

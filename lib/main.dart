@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'Core/resourse/routes_manager.dart';
-import 'Features/auth/presentation/virefy_phone.dart';
+import 'Features/help/presentation/help.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       onGenerateRoute: Routes.getRoute,
       //initialRoute: Routes.splashRoute,
-      home: const VerifyPhone(),
+      home: HelpScreen(),
     );
   }
 }
