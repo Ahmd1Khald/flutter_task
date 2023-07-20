@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../Core/resourse/color_manager.dart';
-import '../../../../Core/resourse/font_manager.dart';
-import '../../../../Core/resourse/style_manager.dart';
+import '../../../../../Core/resourse/color_manager.dart';
+import '../../../../../Core/resourse/font_manager.dart';
+import '../../../../../Core/resourse/style_manager.dart';
 
 class OrLine extends StatelessWidget {
   const OrLine({Key? key}) : super(key: key);

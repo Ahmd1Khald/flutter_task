@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../../../../Core/resourse/color_manager.dart';
+import '../../../../../../Core/resourse/color_manager.dart';
 
 BoxDecoration customDecoration() => BoxDecoration(
       gradient: LinearGradient(

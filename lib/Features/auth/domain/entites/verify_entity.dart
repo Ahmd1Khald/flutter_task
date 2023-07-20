@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
 class VerifyEntity extends Equatable {
-  final String status;
+  final int status;
   final String message;
   final String code;
 

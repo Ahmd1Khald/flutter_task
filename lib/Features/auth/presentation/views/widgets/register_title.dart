@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../../Core/resourse/color_manager.dart';
-import '../../../../Core/resourse/font_manager.dart';
-import '../../../../Core/resourse/strings_manager.dart';
-import '../../../../Core/resourse/style_manager.dart';
+import '../../../../../Core/resourse/color_manager.dart';
+import '../../../../../Core/resourse/font_manager.dart';
+import '../../../../../Core/resourse/strings_manager.dart';
+import '../../../../../Core/resourse/style_manager.dart';
 
 class WelcomeTitle extends StatelessWidget {
   const WelcomeTitle({Key? key}) : super(key: key);

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/Core/resourse/font_manager.dart';
-import 'package:flutter_task/Features/auth/presentation/widgets/verify_widgets/background_decoration.dart';
-import 'package:flutter_task/Features/auth/presentation/widgets/verify_widgets/verify_button.dart';
-import 'package:flutter_task/Features/auth/presentation/widgets/verify_widgets/verify_code_textfields.dart';
-import 'package:flutter_task/Features/auth/presentation/widgets/verify_widgets/verify_title.dart';
+import 'package:flutter_task/Features/auth/presentation/views/widgets/verify_widgets/background_decoration.dart';
+import 'package:flutter_task/Features/auth/presentation/views/widgets/verify_widgets/verify_button.dart';
+import 'package:flutter_task/Features/auth/presentation/views/widgets/verify_widgets/verify_code_textfields.dart';
+import 'package:flutter_task/Features/auth/presentation/views/widgets/verify_widgets/verify_title.dart';
 
-import '../../../Core/resourse/color_manager.dart';
-import '../../../Core/resourse/style_manager.dart';
+import '../../../../Core/resourse/color_manager.dart';
+import '../../../../Core/resourse/style_manager.dart';
 
 class VerifyPhone extends StatelessWidget {
   const VerifyPhone({Key? key}) : super(key: key);

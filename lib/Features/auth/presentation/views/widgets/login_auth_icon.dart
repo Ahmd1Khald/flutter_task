@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/Core/resourse/widgets/shadow.dart';
 
-import '../../../../Core/resourse/assets_manager.dart';
-import '../../../../Core/resourse/color_manager.dart';
+import '../../../../../Core/resourse/assets_manager.dart';
+import '../../../../../Core/resourse/color_manager.dart';
 
 class LoginIcons extends StatelessWidget {
   const LoginIcons({Key? key}) : super(key: key);

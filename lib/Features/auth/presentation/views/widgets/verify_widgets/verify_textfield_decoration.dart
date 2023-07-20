@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../Core/resourse/color_manager.dart';
+import '../../../../../../Core/resourse/color_manager.dart';
 
 InputDecoration verifyDecoration() => InputDecoration(
       focusedBorder: OutlineInputBorder(

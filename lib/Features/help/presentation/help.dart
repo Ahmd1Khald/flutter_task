@@ -4,7 +4,7 @@ import 'package:flutter_task/Features/help/presentation/widgets/help_button.dart
 import 'package:flutter_task/Features/help/presentation/widgets/help_title.dart';
 
 import '../../../Core/resourse/color_manager.dart';
-import '../../auth/presentation/widgets/verify_widgets/background_decoration.dart';
+import '../../auth/presentation/views/widgets/verify_widgets/background_decoration.dart';
 
 class HelpScreen extends StatefulWidget {
   const HelpScreen({super.key});

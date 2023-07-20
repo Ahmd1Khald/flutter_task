@@ -2,22 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task/Core/resourse/color_manager.dart';
 import 'package:flutter_task/Core/resourse/strings_manager.dart';
 
-import '../../../../Core/resourse/font_manager.dart';
-import '../../../../Core/resourse/style_manager.dart';
+import '../../../../../Core/resourse/font_manager.dart';
+import '../../../../../Core/resourse/style_manager.dart';
 
-class PhoneTextField extends StatefulWidget {
-  final TextEditingController phoneController;
+class NameTextField extends StatefulWidget {
+  final TextEditingController nameController;
 
-  const PhoneTextField({
+  const NameTextField({
     super.key,
-    required this.phoneController,
+    required this.nameController,
   });
 
   @override
-  State<PhoneTextField> createState() => _PhoneTextFieldState();
+  State<NameTextField> createState() => _NameTextFieldState();
 }
 
-class _PhoneTextFieldState extends State<PhoneTextField> {
+class _NameTextFieldState extends State<NameTextField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -27,7 +27,7 @@ class _PhoneTextFieldState extends State<PhoneTextField> {
       ),
       cursorColor: ColorManager.lineColor,
       decoration: InputDecoration(
-        hintText: AppStrings.phoneHintString,
+        hintText: AppStrings.nameHintString,
         hintStyle: getLightStyle(
           color: ColorManager.lineColor,
         ),
@@ -47,11 +47,11 @@ class _PhoneTextFieldState extends State<PhoneTextField> {
           color: ColorManager.lineColor,
         )),
       ),
-      controller: widget.phoneController,
-      keyboardType: TextInputType.phone,
+      controller: widget.nameController,
+      keyboardType: TextInputType.name,
       validator: (String? value) {
-        if (value!.length < 11) {
-          return 'Phone is too small';
+        if (value!.isEmpty) {
+          return 'Name is too small';
         }
         return null;
       },

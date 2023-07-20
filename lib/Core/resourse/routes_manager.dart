@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/Core/resourse/strings_manager.dart';
-import 'package:flutter_task/Features/auth/presentation/virefy_phone.dart';
 import 'package:flutter_task/Features/help/presentation/help.dart';
 
-import '../../Features/auth/presentation/register.dart';
+import '../../Features/auth/presentation/views/register.dart';
+import '../../Features/auth/presentation/views/virefy_phone.dart';
 import '../../Features/splash/presentation/splash.dart';
 
 class Routes {

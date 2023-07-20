@@ -3,6 +3,6 @@ class ApiConstant {
   static const baseUrl = 'http://magdsoft.ahmedshawky.fun/api/';
   static const getHelp = 'getHelp';
   static const verifyPhone = 'verifyPhone';
-  static const getCode = 'otp';
+  static const code = 'otp';
   static const getProducts = 'getProducts';
 }

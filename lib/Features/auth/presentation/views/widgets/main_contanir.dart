@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/Core/resourse/widgets/shadow.dart';
-import 'package:flutter_task/Features/auth/presentation/widgets/phone_textfield.dart';
-import 'package:flutter_task/Features/auth/presentation/widgets/register_title.dart';
+import 'package:flutter_task/Features/auth/presentation/views/widgets/phone_textfield.dart';
+import 'package:flutter_task/Features/auth/presentation/views/widgets/register_title.dart';
 
-import '../../../../Core/resourse/color_manager.dart';
+import '../../../../../Core/resourse/color_manager.dart';
 import 'login_button.dart';
 import 'name_textfield.dart';
 

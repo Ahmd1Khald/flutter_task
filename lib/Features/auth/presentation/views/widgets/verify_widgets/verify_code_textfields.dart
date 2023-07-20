@@ -3,9 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_task/Core/resourse/color_manager.dart';
 import 'package:flutter_task/Core/resourse/font_manager.dart';
 import 'package:flutter_task/Core/resourse/widgets/shadow.dart';
-import 'package:flutter_task/Features/auth/presentation/widgets/verify_widgets/verify_textfield_decoration.dart';
+import 'package:flutter_task/Features/auth/presentation/views/widgets/verify_widgets/verify_textfield_decoration.dart';
 
-import '../../../../../Core/resourse/style_manager.dart';
+import '../../../../../../Core/resourse/style_manager.dart';
 
 class VerifyCodeForm extends StatelessWidget {
   const VerifyCodeForm({

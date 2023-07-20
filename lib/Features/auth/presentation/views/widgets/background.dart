@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../Core/resourse/assets_manager.dart';
-import '../../../../Core/resourse/color_manager.dart';
+import '../../../../../Core/resourse/assets_manager.dart';
+import '../../../../../Core/resourse/color_manager.dart';
 
 class BaskGroundWidget extends StatelessWidget {
   const BaskGroundWidget({Key? key}) : super(key: key);
