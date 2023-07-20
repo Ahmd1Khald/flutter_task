@@ -4,6 +4,6 @@ import '../../../../Core/errors/failures.dart';
 import '../entites/verify_entity.dart';
 
 abstract class BaseVerifyRepository {
-  Future<Either<Failure, List<VerifyEntity>>> fetchCode(
+  Future<Either<Failure, VerifyEntity>> fetchCode(
       {required String name, required String phone});
 }

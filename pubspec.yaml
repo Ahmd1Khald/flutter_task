@@ -45,6 +45,9 @@ dependencies:
   # clean arch
   equatable:
   dartz:
+  get_it:
+  # flutter toast
+  fluttertoast:
 
 dev_dependencies:
   flutter_test:

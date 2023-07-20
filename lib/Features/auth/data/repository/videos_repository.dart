@@ -16,7 +16,7 @@ class VerifyRepository extends BaseVerifyRepository {
   });
 
   @override
-  Future<Either<Failure, List<VerifyEntity>>> fetchCode(
+  Future<Either<Failure, VerifyEntity>> fetchCode(
       {required String name, required String phone}) async {
     try {
       final result = await baseVerifyRemoteDataSource.getCode(
@@ -27,6 +27,7 @@ class VerifyRepository extends BaseVerifyRepository {
       return Right(result);
     } on Exception catch (e) {
       if (e is DioError) {
+        print(e);
         return left(ServerFailure.fromDioError(e));
       }
       return left(ServerFailure(e.toString()));
